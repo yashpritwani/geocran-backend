@@ -1,0 +1,8 @@
+.env
+/node_modules
+/*.csv
+/.wwebjs_auth
+/example.js
+/session.json
+./node_modules
+./.git
