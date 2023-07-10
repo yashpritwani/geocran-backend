@@ -3,7 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const connUri = process.env.MONGO_LOCAL_CONN_URL;
-let PORT = process.env.PORT || 5000;
+let PORT = process.env.PORT || 3456;
 const app = express();
 const Coordinate = require('./Model/coordinate');
 const File = require('./Model/file');
@@ -89,7 +89,7 @@ async function encryptAndStoreToBlockChain(fileDetails) {
     })
     .catch((error) => {
       return error
-    });;
+    });
   })
   .catch((error) => {
     return error
